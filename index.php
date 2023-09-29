@@ -19,9 +19,19 @@ class Movie
     // metodo per ottenere le  info sul film
     public function getMovieInfo()
     {
-        return "Titolo: { $this->title }, Registra: { $this->director }, Anno: { $this->year } ";
+        return "Titolo: {$this->title}, Registra: {$this->director}, Anno: {$this->year} ";
     }
 }
 //creazione di un istanza=oggetto della classe Movie
+//new Movie() e l'operazione che crea un nuovo oggetto basato sulla classe Movie
+$movie = new Movie("Il Padrino", "Francis Ford Coppola", 1972);
 
-?>
+//utillizzo del metodo per avere le info sul film
+//Prendiamo il metodo getMovieInfo() che si trova nel oggetto movie e poi lo inglobiamo nella variabile $movieInfo
+//Inglobiamo tutto nella variabile $movieInfo per stampare o manipolare le informazioni che essa contiene.
+$movieInfo = $movie->getMovieInfo();
+
+//stampiamo le informazioni
+echo $movieInfo
+
+    ?>
