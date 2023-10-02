@@ -11,7 +11,7 @@ class Production
     public function __construct(
         string $title,
         string $director,
-        string $year
+        float $year
     ) {
         $this->title    = $title;
         $this->director = $director;
