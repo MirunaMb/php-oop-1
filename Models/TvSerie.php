@@ -2,6 +2,7 @@
 require_once __DIR__ . '/Production.php';
 class TvSeries extends Production
 {
+    use LogDetails;
     public $aired_from_year;
     public $aired_to_year;
     public $number_of_episodes;

@@ -4,7 +4,8 @@ require_once __DIR__ . '/Models/Genre.php';
 require_once __DIR__ . '/Models/Production.php';
 require_once __DIR__ . '/Models/TvSerie.php';
 
-$production = new Production('Proiezione', 'James Cameron', 1997);
+
+$production = new Production('', 'James Cameron', 1997);
 $movie      = new Movie('Row', 'Johnny Deep', 1996, 1999, 120);
 $tvSeries   = new TvSeries('Vikings', 'Gabriel Losky', 2008, 2009, 2020, 250, 6);
 
@@ -19,7 +20,7 @@ $tvSeries   = new TvSeries('Vikings', 'Gabriel Losky', 2008, 2009, 2020, 250, 6)
 
 
 $productions = [
-    new Production('Proiezione', 'James Cameron', 1997),
+    new Production('', 'James Cameron', 1997),
     new Movie('Row', 'Johnny Deep', 1996, 1999, 120),
     new TvSeries('Vikings', 'Gabriel Losky', 2008, 2009, 2020, 250, 6),
     new Production('Proiezione', 'James Cameron', 1997),
@@ -59,7 +60,7 @@ $productions = [
                     <div class="col-4">
                         <div class="card">
                             <div class="card-body">
-                                <?= $production->getDetails() ?>
+                                <?= $production->logDetails(); ?>
                             </div>
                         </div>
                     </div>
